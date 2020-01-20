@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignInActivity"
+    android:background="@color/MAin_Background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medica"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/opensanscondensedbold"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/relative_background"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="@color/MAin_Background"
+            android:textSize="24sp"
+            android:text="Sign In"
+            android:fontFamily="@font/opensanscondensedbold"
+            android:id="@+id/Sign_in_heading"
+            />
+
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Sign_in_heading"
+    android:background="@drawable/edittext_background2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="70dp"
+    android:padding="5dp"
+    android:id="@+id/username_layout"
+    >
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/profile_image" />
+    <EditText
+        android:id="@+id/Username_EditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@android:color/white"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>
+
+
+        <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_layout"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/username_layout"
+        android:background="@drawable/edittext_background2"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/profile_image_temp"
+                android:src="@drawable/ic_vpn_key_black_24dp"
+                />
+
+            <EditText
+                android:id="@+id/password_editText"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+                android:inputType="textPassword"
+                android:background="@android:color/white"
+                android:hint="Password"
+                android:layout_toRightOf="@id/profile_image_temp"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_visibility_black_24dp"
+                android:id="@+id/visibility_image"
+                android:layout_toRightOf="@id/password_editText"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@color/MAin_Background"
+            android:layout_below="@id/password_layout"
+            android:layout_marginLeft="230dp"
+            android:id="@+id/Forgot_Password_Tv_id"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/password_layout"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

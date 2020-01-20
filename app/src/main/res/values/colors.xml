@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Cardviewbackground">#E8EEF1</color>
+    <color name="Toolbar_startColor">#8B1E1E</color>
+    <color name="toolbar_EndColor">#4D1919</color>
+    <color name="Sign_in_backgroundColor">#fff</color>
+    <color name="Sign_in_cardColor">#DCE7E7</color>
+    <color name="Sign_in_BackColor">#EB1B1111</color>
+    <color name="Toolbar_StartColor2">#D74177</color>
+    <color name="Toolbar_EndColor2">#FFE98A</color>
+    <color name="MAin_Background">#253A4B</color>
+    <color name="ButtonColor">#F23B5F</color>
+    <color name="grey">#EAEAEA</color>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:padding="5dp"
+    android:layout_marginBottom="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME: "
+        android:layout_marginStart="7dp"
+        android:textColor="@color/MAin_Background"
+        android:id="@+id/name_item_appointment"
+        android:layout_marginTop="3dp"
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="2dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_item_appointment"
+        android:text="Aadhar No: "
+        android:layout_alignStart="@+id/name_item_appointment"
+        android:textColor="@color/MAin_Background"
+        android:alpha="0.95"
+        android:id="@+id/aadhar_item_appointment"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aadhar_item_appointment"
+        android:text="Gender"
+        android:layout_alignStart="@+id/name_item_appointment"
+        android:textColor="@color/MAin_Background"
+        android:alpha="0.85"
+        android:id="@+id/gender_item_appointment"
+        android:layout_marginTop="3dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOB: "
+        android:layout_toRightOf="@+id/gender_item_appointment"
+        android:layout_alignBaseline="@+id/gender_item_appointment"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/MAin_Background"
+        android:alpha="0.85"
+        android:id="@+id/dob_item_appointment"
+        android:drawableLeft="@drawable/dob"
+        android:drawablePadding="2dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob_item_appointment"
+        android:layout_alignStart="@id/name_item_appointment"
+        android:text="Status: "
+        android:alpha="0.8"
+        android:layout_marginTop="3dp"
+        android:id="@+id/status_item_appointment"
+        android:drawableLeft="@drawable/call_to_action"
+        android:drawablePadding="3dp">
+    </TextView>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:id="@+id/date_item_appointment"
+        android:text="Date:12/01/2020"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignBottom="@id/name_item_appointment"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/MAin_Background"
+        >
+
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:id="@+id/accept_btn"
+        android:layout_below="@+id/status_item_appointment"
+        android:layout_marginTop="10dp"
+        android:background="@color/ButtonColor"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Reject"
+        android:id="@+id/reject_btn"
+        android:layout_alignBaseline="@+id/accept_btn"
+        android:layout_toLeftOf="@+id/accept_btn"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/white"
+        android:textColor="@color/MAin_Background"></Button>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/accept_btn"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey"></View>
+</RelativeLayout>

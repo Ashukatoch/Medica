@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@drawable/relative_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter the number of seats.."
+        android:textColor="@color/MAin_Background"
+        android:textSize="19sp"
+        android:id="@+id/bottom_sheet_text">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter seats"
+        android:inputType="number"
+        android:layout_below="@+id/bottom_sheet_text"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/edittext_background2"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:padding="10dp"
+        android:id="@+id/new_seats">
+    </EditText>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_seats"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_background"
+        android:text="proceed"
+        android:textColor="@android:color/white"
+        android:id="@+id/proceed"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"></Button>
+
+</RelativeLayout>

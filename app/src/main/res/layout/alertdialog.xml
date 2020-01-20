@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="validate and proceed"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/alertText"
+        android:textColor="@color/MAin_Background"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alertText"
+        android:id="@+id/password_alertdialog"
+        android:hint="password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_marginEnd="40dp">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_alertdialog"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:background="@color/ButtonColor"
+        android:text="proceed"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/proceed_alert">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_toLeftOf="@+id/proceed_alert"
+        android:layout_alignBaseline="@+id/proceed_alert"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/MAin_Background"
+        android:text="back"
+        android:id="@+id/back_alertDialog">
+    </Button>
+
+</RelativeLayout>
